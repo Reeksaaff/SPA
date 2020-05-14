@@ -140,7 +140,7 @@ export const TreatmentsComponent = {
             <div class="treatmentElement">
               <div class="treatmentsInfo">
 
-              <div class="czolg"></div>
+              <h2 class="treatmentName1"></h2>
 
                 <div class="treatmentsArea">
                   <img src="https://www.svgrepo.com/show/31773/human-back.svg" alt="human body area" />
@@ -164,7 +164,7 @@ export const TreatmentsComponent = {
             <div class="treatmentElement">
               <div class="treatmentsInfo">
 
-                <div class="treatmentName"></div>
+                <h2 class="treatmentName"></h2>
 
                 <div class="treatmentsArea">
                   <img src="https://www.svgrepo.com/show/31773/human-back.svg" alt="human body area" />
@@ -207,13 +207,14 @@ fetch(url)
 
 const treatmentsName = (treatments) => {
   const resultArea = document.querySelector('.treatmentName');
-
+  const resultArea1 = document.querySelector('.treatmentName1');
   treatments.forEach(treatment => {
     console.log(treatment);
-    const item = document.createElement('h2')
-    item.innerHTML = `${treatment.name}`;
+    // const item = document.createElement('h2')
+    // item.innerHTML = `${treatment.name}`;
 
-    resultArea.appendChild(item);
-    // resultArea.innerHTML = `${treatment.name}`
+    // resultArea.appendChild(item);
+    resultArea.innerHTML = `${treatment[6].name}`
+    resultArea1.innerHTML = `${treatment[1].name}`
   });
 }
