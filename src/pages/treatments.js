@@ -140,7 +140,7 @@ export const TreatmentsComponent = {
             <div class="treatmentElement">
               <div class="treatmentsInfo">
 
-              <div class="${treatmentName}"></div>
+              <div class="czolg"></div>
 
                 <div class="treatmentsArea">
                   <img src="https://www.svgrepo.com/show/31773/human-back.svg" alt="human body area" />
@@ -164,7 +164,7 @@ export const TreatmentsComponent = {
             <div class="treatmentElement">
               <div class="treatmentsInfo">
 
-                <div class="${treatmentName}"></div>
+                <div class="treatmentName"></div>
 
                 <div class="treatmentsArea">
                   <img src="https://www.svgrepo.com/show/31773/human-back.svg" alt="human body area" />
@@ -191,7 +191,6 @@ export const TreatmentsComponent = {
   }
 }
 
-let treatmentName = 'treatmentName'
 
 const url = "./database.json"
 
@@ -207,14 +206,13 @@ fetch(url)
   .catch(err => console.log(err));
 
 const treatmentsName = (treatments) => {
-  const resultArea = document.querySelector(`.${treatmentName}`);
+  const resultArea = document.querySelector('.treatmentName');
 
   treatments.forEach(treatment => {
     console.log(treatment);
-    const item = document.createElement('div')
-    item.innerHTML = `
-    <h2>${treatment.name}</h2>
-  `
+    const item = document.createElement('h2')
+    item.innerHTML = `${treatment.name}`;
+
     resultArea.appendChild(item);
     // resultArea.innerHTML = `${treatment.name}`
   });
