@@ -2,33 +2,64 @@
     margin: 0;
 }
 
-.homepage {
-    width: 100%;
-    height: 100vh;
-    position: relative;
-    overflow: hidden;
-}
-
 .indexPage {
     width: 100%;
     height: 10vh;
-    position: relative;
-    overflow: hidden;
 }
 
-img {
-    position: absolute;
-    min-width: 100%;
-    min-height: 70%;
+/* Navigation */
+.navMain {
+    background-color: rgb(73, 68, 68);
+    height: 50px;
+}
+
+.navMain a {
+    float: left;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    /* display: inline-block; */
+    border-right: 1px white solid;
+    padding: 8px;
+    transform: translate(0%, 15%);
+}
+
+.navMain img {
+    height: 40px;
+    width: 40px;
+}
+
+.spaIcon {
+    float: left;
+    padding: 5px;
+}
+
+.fa-shopping-cart {
+    float: right;
+    font-size: 20px;
+    color: white;
+    transform: translate(-100%, 75%);
+    cursor: pointer;
+}
+
+
+/* Home page slider banner */
+
+.sliderImg {
+    /* position: absolute;
+    min-width: 50%;
+    min-height: 100%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    opacity: 0, 6;
+    opacity: 0, 6; */
+    width: 100%;
+    height: 50vh;
 }
 
-h1 {
+.sliderText {
     position: absolute;
-    top: 50%;
+    top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 40px;
@@ -38,7 +69,7 @@ h1 {
 
 .dots {
     position: absolute;
-    bottom: 30%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -55,4 +86,100 @@ h1 {
 
 .dots span.active {
     box-shadow: 0 0 0 5px white, 0 0 3px 10px red;
+}
+
+/* Treatments page - Treatments */
+
+.treatmentsContainer {
+    display: grid;
+    grid-template-columns: 45% 45%;
+    grid-template-rows: 55vh 55vh 55vh 55vh;
+    justify-content: space-around;
+    align-content: space-around;
+    row-gap: 20px;
+}
+
+.treatmentsContainer .treatmentElement {
+    border: 2px solid darkslategray;
+}
+
+.treatmentElement .treatmentsPhoto {
+    background-color: darkslategray;
+    width: 45%;
+    height: 100%;
+    position: relative;
+}
+
+.treatmentElement .treatmentsPhoto img {
+    border-radius: 50%;
+    width: 18vw;
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+.treatmentElement .treatmentsInfo {
+    text-align: center;
+    position: relative;
+    float: right;
+    /* background-color: red; */
+    height: 100%;
+    width: 55%;
+    font-size: 20px;
+    /* background-color: rgba(236, 231, 231, 0.849); */
+}
+
+.treatmentElement .treatmentsInfo h2 {
+    font-size: 28px;
+    padding: 5px;
+}
+
+.treatmentElement .treatmentsArea {
+    padding-top: 20px;
+}
+
+.treatmentElement .treatmentsArea img {
+    padding-bottom: 5px;
+    width: 50px;
+}
+
+.treatmentElement .treatmentsTime {
+    padding-top: 25px;
+}
+
+.treatmentElement .treatmentsTime img {
+    width: 50px;
+    padding-bottom: 5px;
+}
+
+.treatmentElement .treatmentsInfo .treatmentsPriceBuy {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 25%;
+    border-top: 1px solid black;
+    text-align: center;
+}
+
+.treatmentElement .treatmentsInfo .treatmentsPriceBuy p {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    font-size: 28px;
+}
+
+.treatmentElement .treatmentsInfo .treatmentsPriceBuy .fa-cart-arrow-down {
+    position: absolute;
+    font-size: 40px;
+    color: darkslategray;
+    top: 50%;
+    right: 10%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+.treatmentElement .treatmentsInfo .treatmentsPriceBuy .fa-cart-arrow-down:hover {
+    opacity: 0.7;
 }
