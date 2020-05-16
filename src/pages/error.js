@@ -3,7 +3,7 @@ export const ErrorComponent = {
     return `
         <section>
           <h1>Error</h1>
-          <p>This is just a test</p>
+          <p>This is just a ERROR</p>
         </section>
       `;
   }

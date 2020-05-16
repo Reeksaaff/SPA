@@ -3,7 +3,7 @@ export const TreatmentsComponent = {
     return `
         <section>
           <h1>Treatments</h1>
-          <p>zabiegi</p>
+          <p>zabieginpm</p>
           <div class="treatmentsContainer">
             <div class="treatmentElement">
               <div class="treatmentsInfo">
@@ -18,7 +18,7 @@ export const TreatmentsComponent = {
                 </div>
                 <div class="treatmentsPriceBuy">
                     <p>40zł</p>
-                    <i class="fas fa-cart-arrow-down"></i>
+                    <a class="add-cart" href="#/cart"><i class="fas fa-cart-arrow-down"></i></a>
                 </div>
               </div>
               <div class="treatmentsPhoto">
@@ -40,7 +40,7 @@ export const TreatmentsComponent = {
                 </div>
                 <div class="treatmentsPriceBuy">
                   <p>40zł</p>
-                  <i class="fas fa-cart-arrow-down"></i>
+                  <a class="add-cart" href="#/cart"><i class="fas fa-cart-arrow-down"></i></a>
                 </div>
               </div>
               <div class="treatmentsPhoto">
@@ -62,7 +62,7 @@ export const TreatmentsComponent = {
                 </div>
                 <div class="treatmentsPriceBuy">
                     <p>40zł</p>
-                    <i class="fas fa-cart-arrow-down"></i>
+                    <a class="add-cart" href="#/cart"><i class="fas fa-cart-arrow-down"></i></a>
                 </div>
               </div>
               <div class="treatmentsPhoto">
@@ -84,7 +84,7 @@ export const TreatmentsComponent = {
                 </div>
                 <div class="treatmentsPriceBuy">
                   <p>40zł</p>
-                  <i class="fas fa-cart-arrow-down"></i>
+                  <a class="add-cart" href="#/cart"><i class="fas fa-cart-arrow-down"></i></a>
                 </div>
               </div>
               <div class="treatmentsPhoto">
@@ -106,7 +106,7 @@ export const TreatmentsComponent = {
                 </div>
                 <div class="treatmentsPriceBuy">
                   <p>40zł</p>
-                  <i class="fas fa-cart-arrow-down"></i>
+                  <a class="add-cart" href="#/cart"><i class="fas fa-cart-arrow-down"></i></a>
                 </div>
               </div>
               <div class="treatmentsPhoto">
@@ -128,7 +128,7 @@ export const TreatmentsComponent = {
                 </div>
                 <div class="treatmentsPriceBuy">
                   <p>40zł</p>
-                  <i class="fas fa-cart-arrow-down"></i>
+                  <a class="add-cart" href="#/cart"><i class="fas fa-cart-arrow-down"></i></a>
                 </div>
               </div>
               <div class="treatmentsPhoto">
@@ -152,7 +152,7 @@ export const TreatmentsComponent = {
                 </div>
                 <div class="treatmentsPriceBuy">
                   <p>40zł</p>
-                  <i class="fas fa-cart-arrow-down"></i>
+                  <a class="add-cart" href="#/cart"><i class="fas fa-cart-arrow-down"></i></a>
                 </div>
               </div>
               <div class="treatmentsPhoto">
@@ -176,14 +176,13 @@ export const TreatmentsComponent = {
                 </div>
                 <div class="treatmentsPriceBuy">
                   <p>40zł</p>
-                  <i class="fas fa-cart-arrow-down"></i>
+                  <a class="add-cart" href="#/treatments"><i class="fas fa-cart-arrow-down"></i></a>
                 </div>
               </div>
               <div class="treatmentsPhoto">
                 <img src="https://images.unsplash.com/photo-1587043862100-01920db231ba?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="" />
               </div>
             </div>
-
 
           </div>
         </section>
@@ -209,7 +208,7 @@ const treatmentsName = (treatments) => {
   const resultArea = document.querySelector('.treatmentName');
   const resultArea1 = document.querySelector('.treatmentName1');
   treatments.forEach(treatment => {
-    console.log(treatment);
+    // console.log(treatment);
     // const item = document.createElement('h2')
     // item.innerHTML = `${treatment.name}`;
 

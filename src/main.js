@@ -13,6 +13,9 @@ import {
 import {
     BookingComponent
 } from './pages/booking.js'
+import {
+    CartComponent
+} from './pages/cart.js'
 // Routes
 
 const routes = [{
@@ -30,6 +33,10 @@ const routes = [{
     {
         path: '/booking',
         component: BookingComponent
+    },
+    {
+        path: '/cart',
+        component: CartComponent
     }
 ];
 

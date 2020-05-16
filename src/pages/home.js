@@ -62,4 +62,4 @@ const changeSlide = () => {
   changeDot();
 }
 
-setInterval(changeSlide, time);
+// setInterval(changeSlide, time);

@@ -18,8 +18,7 @@
     text-decoration: none;
     color: white;
     font-size: 18px;
-    /* display: inline-block; */
-    border-right: 1px white solid;
+    /* border-right: 1px white solid; */
     padding: 8px;
     transform: translate(0%, 15%);
 }
@@ -34,11 +33,11 @@
     padding: 5px;
 }
 
-.fa-shopping-cart {
+#cart {
     float: right;
     font-size: 20px;
     color: white;
-    transform: translate(-100%, 75%);
+    transform: translate(-50%, 15%);
     cursor: pointer;
 }
 
